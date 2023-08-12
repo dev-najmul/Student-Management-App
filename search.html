@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Result System Management</title>
+    <!-- bootstrap cdn v-5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- font-awesome cdn version 6.4.0 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css file -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- search section -->
+    <div class="container">
+      <div class="row justify-content-center py-5">
+        <div class="col-md-5">
+          <button class="btn btn-primary px-4 py-2 mb-3">
+            <a style="color: white; text-decoration: none" href="./index.html"
+              >Admin Panel</a
+            >
+          </button>
+          <hr />
+          <div class="card">
+            <div class="card-body shadow">
+              <div class="title">
+                <h2>Search Student Result</h2>
+                <hr />
+                <div class="serarch">
+                  <div class="sFmsg"></div>
+                  <form id="serach_form">
+                    <div class="py-2">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Roll"
+                        name="roll"
+                      />
+                    </div>
+
+                    <div class="py-2">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Reg"
+                        name="reg"
+                      />
+                    </div>
+
+                    <div class="py-4">
+                      <button type="submit" class="btn btn-success">
+                        Search
+                      </button>
+                      <button type="reset" class="btn btn-danger">Reset</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Result Section -->
+    <div style="height: 100vh" class="container" id="resDiv">
+      <div class="row justify-content-center py-5">
+        <div class="col-md-8" id="result_card_wrapper"></div>
+      </div>
+    </div>
+    <!-- Bootstrap cdn v-5-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js files -->
+    <script src="./src/data.js"></script>
+    <script src="./src/functions.js"></script>
+    <script src="./src/search.js"></script>
+  </body>
+</html>
